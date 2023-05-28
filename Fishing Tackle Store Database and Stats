@@ -1,0 +1,23 @@
+CREATE TABLE ANGLER (id INTEGER PRIMARY KEY, product TEXT, category TEXT, Lure TEXT, size TEXT, color TEXT, quantity INTEGER, price REAL );
+
+INSERT INTO ANGLER VALUES (1, "Fishing Lures", "Freshwater", "Worms", "1 Small", "Red", 10, 4.99);
+INSERT INTO ANGLER VALUES (2, "Fishing Lures", "Freshwater", "Poppers", "1 Small", "Silver", 1, 4.99);
+INSERT INTO ANGLER VALUES (3, "Fishing Lures", "Freshwater", "Crankbait", "1 Small", "Perch", 1, 7.99);
+INSERT INTO ANGLER VALUES (4, "Fishing Lures", "Freshwater", "Swimbait", "1 Small", "Trout", 10, 6.99);
+INSERT INTO ANGLER VALUES (5, "Fishing Lures", "Freshwater", "Topwater Frogs", "1 Small", "Green", 4, 8.99);
+INSERT INTO ANGLER VALUES (6, "Fishing Lures", "Freshwater", "Worms", "2 Medium", "Red", 1, 6.99);
+INSERT INTO ANGLER VALUES (7, "Fishing Lures", "Freshwater", "Poppers", "2 Medium", "Silver", 1, 5.99);
+INSERT INTO ANGLER VALUES (8, "Fishing Lures", "Freshwater", "Crankbait", "2 Medium", "Perch", 1, 7.99);
+INSERT INTO ANGLER VALUES (9, "Fishing Lures", "Freshwater", "Swimbait", " 2 Medium", "Trout", 1, 9.99);
+INSERT INTO ANGLER VALUES (10, "Fishing Lures", "Freshwater", "Topwater Frogs", "2 Medium", "Green", 1, 7.99);
+INSERT INTO ANGLER VALUES (11, "Fishing Lures", "Freshwater", "Worms", "3 Large", "Red", 1, 7.99);
+INSERT INTO ANGLER VALUES (12, "Fishing Lures", "Freshwater", "Poppers", "3 Large", "Silver", 1, 6.99);
+INSERT INTO ANGLER VALUES (13, "Fishing Lures", "Freshwater", "Crankbait", "3 Large", "Perch", 1, 8.99);
+INSERT INTO ANGLER VALUES (14, "Fishing Lures", "Freshwater", "Swimbait", "3 Large", "Trout", 1, 10.99);
+INSERT INTO ANGLER VALUES (15, "Fishing Lures", "Freshwater", "Topwater Frogs", "3 Large", "Green", 1, 8.99);
+
+SELECT * FROM ANGLER ORDER BY size;
+
+SELECT SUM(Price) FROM ANGLER;
+
+
