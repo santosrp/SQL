@@ -1,0 +1,78 @@
+select *
+from movies;
+
+select *
+from movies
+where released >= 2021
+order by released DESC;
+
+SELECT *
+FROM movies
+WHERE released>2020
+ORDER BY released desc
+
+You can also use WHERE released>=2021
+There are often multiple ways to answer a question with SQL.
+
+1.5
+##Select the SUM of minutes that all users spent shopping. To do this, you'll use the session_duration column, which contains the number of minutes each user shopped during their session.
+
+SELECT SUM(session_duration)
+FROM ecom_data;
+
+
+##Select the SUM of minutes that all users spent shopping for each item. To do this, you'll use session_duration, item_name, and GROUP BY.
+SELECT SUM(session_duration), item_name
+FROM ecom_data
+GROUP BY item_name DESC;
+
+1.6
+SELECT SUM(price), category
+FROM superstore
+GROUP BY category;
+
+SELECT MAX(price), category
+FROM superstore
+GROUP BY category;
+
+SELECT MIN(price), category
+FROM superstore
+GROUP BY category;
+
+SELECT AVG(price), category
+FROM superstore
+GROUP BY category;
+
+SELECT COUNT(price), category
+FROM superstore
+GROUP BY category;
+
+##Write your own SQL query that will show a statistic about the price for items in the category of "Kitchen Supplies". The values in the categories column are called text strings, and text strings are case sensitive. That means if you want to select "Kitchen Supplies", you will need to type it exactly as it appears in the data, ie with a capital "K" and a capital "S".
+
+SELECT SUM(price), category
+FROM superstore
+WHERE category = "Kitchen Supplies";
+
+SELECT MAX(price), category
+FROM superstore
+WHERE category = "Kitchen Supplies";
+
+SELECT MIN(price), category
+FROM superstore
+WHERE category = "Kitchen Supplies";
+
+SELECT AVG(price), category
+FROM superstore
+WHERE category = "Kitchen Supplies";
+
+SELECT *
+FROM superstore
+WHERE stock_quantity > 30
+ORDER BY stock_quantity DESC;
+
+SELECT SUM(stock_quantity)
+FROM superstore
+WHERE item_name = "Wireless Bluetooth Speaker";
+
+
+
