@@ -32,7 +32,52 @@ VALUES
 
 
 
+SELECT SUM(price), category
+FROM superstore
+GROUP BY category;
 
+SELECT MAX(price), category
+FROM superstore
+GROUP BY category;
+
+SELECT MIN(price), category
+FROM superstore
+GROUP BY category;
+
+SELECT AVG(price), category
+FROM superstore
+GROUP BY category;
+
+SELECT COUNT(price), category
+FROM superstore
+GROUP BY category;
+
+##Write your own SQL query that will show a statistic about the price for items in the category of "Kitchen Supplies". The values in the categories column are called text strings, and text strings are case sensitive. That means if you want to select "Kitchen Supplies", you will need to type it exactly as it appears in the data, ie with a capital "K" and a capital "S".
+
+SELECT SUM(price), category
+FROM superstore
+WHERE category = "Kitchen Supplies";
+
+SELECT MAX(price), category
+FROM superstore
+WHERE category = "Kitchen Supplies";
+
+SELECT MIN(price), category
+FROM superstore
+WHERE category = "Kitchen Supplies";
+
+SELECT AVG(price), category
+FROM superstore
+WHERE category = "Kitchen Supplies";
+
+SELECT *
+FROM superstore
+WHERE stock_quantity > 30
+ORDER BY stock_quantity DESC;
+
+SELECT SUM(stock_quantity)
+FROM superstore
+WHERE item_name = "Wireless Bluetooth Speaker";
 
 
 
